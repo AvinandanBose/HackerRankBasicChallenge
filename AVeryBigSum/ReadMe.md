@@ -52,4 +52,74 @@ You might need to use long int C/C++/Java to store such sums.
 ```
 </h3>
   
+<h3 align=Left>
+  
+```
+Solution
+--------------------
+
+Approach : As we are given int ar[n] , 
+and each value will be of Long Integer type and each input will add , 
+and the resultant value will be also Long type.
+
+Therefore 1st Apprach will be:
+public static long aVeryBigSum(List<Long> ar) {
+    long sum = 0;
+        for (Long aLong : ar) {
+            sum += aLong;
+        }
+        return sum;
+
+    }
+
+}
+
+Using Iterable
+-------------
+public static long aVeryBigSum(List<Long> ar) {
+    Iterable<Long> iterable = ar;
+         long sum = 0;
+            for (Long i : iterable) {
+                sum += i;
+            }
+            return sum;
+
+    }
+
+}
+
+Using Iterator
+-------------
+public static long aVeryBigSum(List<Long> ar) {
+     Iterator<Long> iterator = ar.iterator();
+         long sum = 0;
+            while (iterator.hasNext()) {
+                sum += iterator.next();
+            }
+            return sum;
+
+    }
+
+}
+
+And most optimized solution and advanced will be using StreamAPI of Java . 
+-----------------------------------------------------------------------
+ public static long aVeryBigSum(List<Long> ar) {
+    return ar.stream().mapToLong(Long::longValue).sum();
+
+    }
+
+}
+
+Here stream function calls mapToLong function taking each value and 
+converting each value by longValue method of wrapper class Long ,
+here called by 'method reference ::' 
+and add each input by sum() method.
+
+
+
+
+
+```
+</h3>
   

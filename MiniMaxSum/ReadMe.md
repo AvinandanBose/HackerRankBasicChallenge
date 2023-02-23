@@ -100,7 +100,8 @@ There is a easy way to achieve the above process:
 
 Then Find out total SUM .
 
-TOTAL SUM - MIN  and TOTAL SUM - MAX which is shown in below:
+TOTAL SUM - MIN  and TOTAL SUM - MAX , gives out the desired output,
+ which is shown in below:
 
 public static void miniMaxSum(List<Integer> arr) {
      		long min = arr.get(0);

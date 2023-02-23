@@ -101,6 +101,17 @@ There is a easy way to achieve the above process:
 Then Find out total SUM .
 
 TOTAL SUM - MIN  and TOTAL SUM - MAX , gives out the desired output,
+
+As, 
+if INPUT VALUES = 1,2,3,4,5
+
+We are finding Actually:
+1 . [1+2+3+4+5] -1(MIN)
+1.  [1+2+3+4+5] -5(MAX) 
+
+IN OTHER WORDS From Total, Take out Min
+IN OTHER WORDS From Total, Take out Max
+
  which is shown in below:
 
 public static void miniMaxSum(List<Integer> arr) {

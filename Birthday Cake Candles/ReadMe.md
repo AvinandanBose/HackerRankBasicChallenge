@@ -23,10 +23,20 @@
     }
 
 }
-  
+
+----------------------------------------------------
   Explanation: 
-  
-  You are in charge of the cake for a child's birthday. You have decided the cake will have one candle for each year of their total age. They will only be able to blow out the tallest of the candles. Count how many candles are tallest. Eg : Candles =[4,4,1,3], The maximum candles are 4 units high . There are 2 of them , so return 2. Hence explanation is very easy that we would be given an array where units of candles will be given and from there we have to count number higher units . 
+------------------------------------------------------------ 
+  You are in charge of the cake for a child's birthday. 
+You have decided the cake will have one candle for each year of their total age. 
+They will only be able to blow out the tallest of the candles. 
+Count how many candles are tallest. Eg : Candles =[4,4,1,3], The maximum candles are 4 units high . 
+There are 2 of them , so return 2. 
+Hence explanation is very easy that we would be given an array ,
+where units of candles will be given and from there we have to count number higher units . 
+	
+	
+		
 
 
 So is the below program is doing:
@@ -85,6 +95,38 @@ int i =3
 	Else if: (candles.get(3) =3 == max =4):False
 			
 Hence count = 2 (Ans)
+=========================================================================
+	
+There is another approach:
+	
+public static int birthdayCakeCandles(List<Integer> candles) {
+
+        int max = 0;
+        for (int i = 0; i < candles.size(); i++) {
+            if (candles.get(i) > max) {
+                max = candles.get(i);
+            }
+
+        }
+
+         Iterator<Integer> itr = candles.iterator();
+        while (itr.hasNext()) {
+            if (itr.next() < max) {
+                itr.remove();
+            }
+        }
+        return candles.size();
+    }
+}
+
+Here we find out the max and in another we remove the elements and keep all max.
+				 
+Suppose we have [1, 14, 15 ,70,70]
+max= 70
+After remove all element candles have = [70,70]				
+Hence Size = 2 [Expected Output],
+But here we see Line of Code and Two iteration we use , hence Time Complexity also increases ,
+Hence First approach is more optimized.
 
 	
   

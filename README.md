@@ -15,4 +15,8 @@ This is all about Hacker Rank Basic Challenge Preparation
 <h3><a href="https://github.com/AvinandanBose/HackerRankBasicChallenge/tree/main/Pairs"> 12. Pairs </h3>
 <h3><a href="https://github.com/AvinandanBose/HackerRankBasicChallenge/tree/main/Bigger%20is%20Greater"> 13. Bigger Is Greater </h3>
 
+<h3><a href="https://github.com/AvinandanBose/HackerRankBasicChallenge/tree/main/Modified%20Kaprekar%20Numbers"> 14. Modified Kaprekar Numbers </h3>
+
+<h3><a href="https://github.com/AvinandanBose/HackerRankBasicChallenge/tree/main/Beautiful%20Triplets"> 15. Beautiful Triplets </h3>
+
 
